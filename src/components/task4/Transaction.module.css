@@ -1,0 +1,25 @@
+tr:nth-child(2n) {
+  background-color: rgb(218, 228, 234);
+}
+
+tr:nth-child(2n + 1) {
+  background-color: rgb(255, 255, 255);
+}
+
+th {
+  background-color: rgb(147, 206, 241);
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+
+td {
+  padding: 10px;
+  color: rgb(119, 119, 119); 
+}
+
+.transactionHistory {
+  margin: 20px auto;
+  width: 600px;
+  text-align: center;
+  border: 1px solid rgb(207, 207, 207);
+}
