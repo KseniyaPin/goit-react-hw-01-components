@@ -10,22 +10,8 @@ const Transaction = ({ transaction }) => {
   ));
 };
 
-
-
-  //  return (
-  //    <tr key={id}>
-  //      <td>{type}</td>
-  //      <td>{amount}</td>
-  //      <td>{currency}</td>
-  //    </tr>
-  //  );
-
-
-// Transaction.propTypes = {
-//   type: PropTypes.string.isRequired,
-//   amount: PropTypes.string.isRequired,
-//   currency: PropTypes.string.isRequired,
-//   id: PropTypes.string.isRequired,
-// };
+Transaction.propTypes = {
+  transaction: PropTypes.array,
+};
 
 export default Transaction;

@@ -14,12 +14,6 @@ const Friend = ({ avatar, name, isOnline }) => {
   );
 };
 
-const colorStatus = document.querySelector('span[isOnline]');
-
-// isOnline ? className={css.status} : className={css.statusOff};
-
-// background-color: ${(props) => props.isOnline ? "green" : "red"};
-
 Friend.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
