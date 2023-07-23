@@ -17,7 +17,7 @@ const Statistics = ({ stats }) => {
 // };
 
 Statistics.propTypes = {
-  stats: PropTypes.arrayOf(PropTypes.string)
+  stats: PropTypes.array
 };
 
 

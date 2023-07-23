@@ -1,7 +1,7 @@
 import Transaction from 'components/task4/Transaction';
 import css from 'components/task4/Transaction.module.css';
 
-function TransactionHistory({ items }) {
+function TransactionHistory({ data }) {
   return (
     <table className={css.transactionHistory}>
       <thead>
@@ -13,17 +13,17 @@ function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items.map(item => (
-          <Transaction
-            type={item.type}
-            amount={item.amount}
-            currency={item.currency}
-            id={item.id}
-          />
-        ))}
+        <Transaction transaction={data} />
       </tbody>
     </table>
   );
 }
+
+// TransactionHistory.propTypes = {
+//   type: PropTypes.string.isRequired,
+//   amount: PropTypes.string.isRequired,
+//   currency: PropTypes.string.isRequired,
+//   id: PropTypes.string.isRequired,
+// };
 
 export default TransactionHistory;

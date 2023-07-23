@@ -5,7 +5,7 @@ const Friend = ({ avatar, name, isOnline }) => {
   return (
     <>
       <span
-        status={isOnline}
+        statys="{isOnline}"
         className={isOnline ? css.status : css.statusOff}
       ></span>
       <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
@@ -14,10 +14,8 @@ const Friend = ({ avatar, name, isOnline }) => {
   );
 };
 
-const colorStatus = document.querySelector('span[isOnline]'); 
+const colorStatus = document.querySelector('span[isOnline]');
 
-
-  
 // isOnline ? className={css.status} : className={css.statusOff};
 
 // background-color: ${(props) => props.isOnline ? "green" : "red"};
